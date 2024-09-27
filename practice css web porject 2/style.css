@@ -1,0 +1,454 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+}
+
+/* mobil navber desing start*/
+
+.navber{
+    background-color: rgba(29, 119, 95, 0.622);
+    text-align: center;
+}
+.logo{
+    
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+   
+}
+.head-title{
+   
+
+}
+.head-title h1{
+    font-size: 2.5rem;
+   
+}
+.manuber{
+    display: flex;
+    flex-direction: column;
+}
+
+.manuber a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    padding:10px;
+    margin: 10px;
+    font-size: 20px;
+    background: rgb(87, 144, 119);
+    border-radius: 10px;
+    
+}
+.navber::after{
+    clear: both;
+    display: table;
+    clear: both;
+}
+/* mobil navber desing end*/
+
+/*profile section strat*/
+.pro-sec{
+   
+   
+}
+.ani-img{
+    width:200px;
+    height: 200px;
+    margin: 20px 50px;
+    transition: 3s;
+}
+.ani-img:hover{
+    transform: rotate(360deg);
+}
+.pro-sec h2{
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+.pro-sec p{
+    text-align: center;
+    padding-top: 10px;
+    font-family: Arial;
+}
+.pro-sec::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/*about section start*/
+.about-section{
+    background-color: rgba(21, 151, 151, 0.574);
+}
+.about-head{
+   text-align: center;
+   margin: 20px;
+}
+.about-head h2{
+   margin: 20px;
+    
+}
+.hr{
+    width: 70px;
+    margin: 0px auto;
+    border: 6px dotted white; 
+    border-bottom: none;
+    
+    
+}
+
+.about-main{
+  
+
+}
+.main-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.main-left img{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius:50% ;
+}
+.main-right{
+    margin: 10px 0px;
+}
+.main-right p{
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial;
+    
+    
+}
+.main-right p a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: gray;
+    padding: 10px;
+    font-size: 20px;
+    
+    
+
+}
+
+.main-hr{
+   width: 80%;
+   margin: 0 auto;
+  
+}
+.about-section::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+   
+
+/*about section end*/
+
+/*professional experience section start here*/
+
+.pro-exp{
+   margin: 20px;
+   
+   
+}
+
+.work-exp{
+    background-color: grey;
+    margin: 10px;
+    
+}
+.work-icon{
+    text-align: center;
+   
+}
+.work-icon img{
+    margin-top: 50px;
+    border: 5px solid whitesmoke;
+    border-radius: 50%;
+    padding: 20px;
+}
+.card-title{
+    text-align: center;
+}
+.card-title h2{
+    margin: 15px;
+    background-color: rgb(95, 93, 93);
+    padding: 10px;
+    border-radius: 10px;
+}
+.card-dese{
+    padding: 10px;
+}   
+.card-dese ol{
+    margin-left: 30px; 
+    margin-right: 10px;
+}
+
+.card-dese li{
+     margin: 15px 0px;
+}
+.card-dese li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+.progres-ber{
+    padding-left: 45px;
+    
+    
+}
+.progres-ber ul{
+    padding: 10px;
+    
+}
+.progres-ber li{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 20px;
+    margin: 30px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+.progres-ber li::before{
+    content: '';
+    background-color: cadetblue;
+    position:absolute;
+    top: calc(100% + 5px);
+    left: 0px;
+    height: 25px;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.progres-ber li::after{
+    content: '';
+    background-color: cadetblue;
+    position:absolute;
+    top: calc(100% + 5px);
+    left: 0px;
+    height: 25px;
+    border-radius: 10px;
+
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count:inherit;
+    animation-duration:forwards;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    
+
+}
+.progres-ber li.html::after{
+    animation-name: html;
+}
+@keyframes html {
+    to{
+        background-color: rgb(225, 126, 13);
+        width: 90%;
+      
+    }
+    from{  
+    }
+}
+.progres-ber li.css::after{
+    animation-name: css;
+}
+@keyframes css {
+    to{
+        background-color: rgba(224, 206, 67, 0.412);
+        width: 80%;
+      
+    }
+    from{  
+    }
+}
+.progres-ber li.javascript::after{
+    animation-name: javascript;
+}
+@keyframes javascript {
+    to{
+        background-color: rgba(149, 38, 10, 0.977);
+        width: 30%;
+      
+    }
+    from{  
+    }
+}
+.progres-ber li.bootstep::after{
+    animation-name: bootstep;
+}
+@keyframes bootstep {
+    to{
+        background-color: rgba(61, 149, 10, 0.857);
+        width: 60%;
+      
+    }
+    from{  
+    }
+}
+
+.div-clear{
+    clear: right;
+}
+.pro-exp::after{
+    clear: both;
+    display: table;
+    content: '';
+  }
+/*professional experience section end here*/
+
+/*achievement-contactme start hear*/
+   
+.achive-cantact{
+    background-color: rgb(3, 147, 147);
+    padding: 10px;
+}
+  /*achievement section start*/
+.ach-can-head{
+   
+}
+.ach-can-titel{
+    text-align: center;
+    
+}
+.ach-can-titel h2{
+    padding-bottom: 20px;
+}
+
+.content{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.content p{
+    padding: 20px;
+    color: #fff;
+}
+
+
+
+
+.achive-cantact::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+   /*achievement section end*/
+
+   /*cantact me section start*/
+form {
+    text-align: center;
+    margin: 20px;
+
+}   
+.form1{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+}
+#mess{
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+}
+button{
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.714);
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    
+    
+} 
+
+    /*achievement-butten scetion start  hear*/
+.contact-links{
+
+}
+.media-buttons{
+    margin: 20px;
+    text-align: center;
+}
+
+.but{
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    cursor: pointer;
+    
+}
+.but:hover{
+    background-color: grey;
+}
+
+.achive-cantact::after{
+    clear: both;
+    display:table;
+    content: '';
+}
+
+/*achievement-butten scetion end  hear*/
+
+/*footer section start hear*/
+
+.footer{
+    background-color: black;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-manu{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.footer-manu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+}
+.footer-bace{
+    padding: 30px 0px;
+    font-size: 20px;
+}
+
+.footer::after{
+    clear: both;
+    display:table;
+    content: '';
+}
+
+
+/*footer section end hear*/
+
+
+
